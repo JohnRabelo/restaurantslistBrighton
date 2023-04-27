@@ -1,0 +1,22 @@
+.footerContainer{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    width: 100vw;
+}
+
+.creators{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #C1C1C1;
+    width: 100vw;
+    background-color: black;
+    font-size: 18px;
+}
+
+.creators span{
+    color: green;
+    margin-left: 6px;
+    font-weight:600;
+}

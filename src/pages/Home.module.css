@@ -1,3 +1,5 @@
-.creators{
-    color: #c1c166;
+.homeContainer{
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 180px);
 }
