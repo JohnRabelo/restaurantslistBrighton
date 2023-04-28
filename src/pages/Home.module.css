@@ -3,3 +3,32 @@
     justify-content: center;
     height: calc(100vh - 180px);
 }
+
+.BannerOrganizer{
+    height: 60vh;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+}
+
+.BannerContainer{
+    overflow: hidden;
+
+}
+
+.BannerDisplay{
+    width: 160vw;
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+    transition: all ease 0.4s;
+
+}
+
+.BannerDisplay img{
+    width: 80vw;
+    height: 80vh;
+    object-fit: contain;
+}
