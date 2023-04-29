@@ -15,7 +15,7 @@
 
 .BannerContainer{
     overflow: hidden;
-
+    height: inherit;
 }
 
 .BannerDisplay{
@@ -24,11 +24,43 @@
     justify-items: flex-start;
     align-items: center;
     transition: all ease 1.2s;
-
 }
 
 .BannerDisplay img{
     width: 80vw;
-    height: 80vh;
+    height: 60vh;
     object-fit: contain;
+}
+
+.statement{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    color: rgb(108, 150, 68);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+.listLayout{
+    width: 80vw;
+    min-width: 320px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+@media (min-width: 200px) and (max-width: 449px) {
+
+    .BannerOrganizer{
+        height: 40vh;
+    }
+
+    .BannerDisplay img{
+        height: 40vh;
+        object-fit: fill;
+    }
+
 }
