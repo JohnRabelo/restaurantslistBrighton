@@ -39,12 +39,14 @@
     color: rgb(108, 150, 68);
     font-size: 30px;
     font-weight: 600;
+    text-align: center;
+    margin-bottom: 100px;
 }
 
 
 .listLayout{
     width: 80vw;
-    min-width: 320px;
+    min-width: 300px;
     margin: auto;
     display: flex;
     justify-content: center;
@@ -60,7 +62,37 @@
 
     .BannerDisplay img{
         height: 40vh;
+    }
+
+    .statement{
+        width: 80vw;
+        margin: auto;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-size: 26px;
+        font-weight: 600;
+
+    }
+
+}
+
+@media (min-width: 200px) and (max-width: 840px) {
+
+
+
+    .BannerDisplay img{
+        height: 40vh;
         object-fit: fill;
     }
 
+}
+
+@media (min-width: 450px) and (max-width: 840px) {
+    .BannerOrganizer{
+        height: 40vh;
+    }
+
+    .statement{
+        margin-bottom: 60px;
+    }
 }

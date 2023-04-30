@@ -6,7 +6,7 @@ function ItemOrganizer(props) {
     <div>
         <div className={ItemOrgcl.StdListContainer}>
             {props.List.map((ItemUnit) => {
-                return <SingleItem Title={ItemUnit.Title} Address={ItemUnit.Address} Description={ItemUnit.Description} />
+                return <SingleItem Title={ItemUnit.Title} Address={ItemUnit.Address} Description={ItemUnit.Description} ItemImage={ItemUnit.ItemImage} GMaps={ItemUnit.GMaps} WbSite={ItemUnit.WbSite} />
             })}
         </div>
       </div>
