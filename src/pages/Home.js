@@ -2,7 +2,10 @@ import homecl from './Home.module.css'
 import banner1 from '../assets/banner1.jpg'
 import banner2 from '../assets/banners2.jpg'
 import imgDs from '../assets/dsImg.jpg'
+import whImg from '../assets/whImg.jpg'
+import imgLaChoza from '../assets/lachozaImg.jpg'
 import imgTherailway from '../assets/therailwayImg.jpg'
+import tortillaImg from '../assets/tortillaImg.jpg'
 import { useState,useEffect } from 'react';
 
 import ItemOrganizer from '../components/ItemOrganizerTemplate';
@@ -18,6 +21,21 @@ const LIST_DATA = [
     WbSite: 'http://dossombreros.co.uk/',
   },
   {
+    Title: 'WAHACA',
+    Address: 'NORTH ST/ NEW ROAD',
+    Description: 'Wahaca Brighton, celebrated for its fresh, social, Mexican market food, has opened a 130-cover restaurant on North St, Brighton. It’s the perfect spot to enjoy amazing food and cocktails with friends, family or on a date! It’s big enough for larger parties of people too, so if you have a celebration coming up, Wahaca’s a winner!',
+    ItemImage: whImg,
+    GMaps:'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5040.630561131187!2d-0.1360629!3d50.8253238!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875850afade01d9%3A0xc2ba8e20f745ff7!2sWahaca%20Brighton!5e0!3m2!1spt-BR!2sie!4v1682889589272!5m2!1spt-BR!2sie',
+    WbSite: 'https://www.wahaca.co.uk/locations/brighton/',
+  },  {
+    Title: 'LA CHOZA',
+    Address: 'GLOUCESTER ROAD',
+    Description: 'Whether enjoying a romantic meal for two or partying with a large group of friends, we’ll make sure you have a fantastic time! Dos Sombreros is also a perfect place for a drink or party!',
+    ItemImage: imgLaChoza,
+    GMaps:'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.2265752464336!2d-0.14429080659701163!3d50.826966987134064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487585750eb61871%3A0xf900d0010499b69c!2sLa%20Choza!5e0!3m2!1spt-BR!2sie!4v1682890063347!5m2!1spt-BR!2sie',
+    WbSite: 'https://lachoza.co.uk/',
+  },
+  {
     Title: 'THE RAILWAY INN',
     Address: 'PORTSLADE',
     Description: 'The Railway Inn is a large community pub in Portslade. Best known for our great food, friendly staff and welcoming atmosphere, we are a family & dog friendly pub with lots going on throughout the year.',
@@ -25,26 +43,21 @@ const LIST_DATA = [
     GMaps:'https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2733.7961448562974!2d-0.2062234220820394!3d50.83598794633397!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48759aa2a94e01f9%3A0xe6f0d73d651da51f!2sThe%20Railway%20Inn!5e0!3m2!1sen!2sie!4v1682810365605!5m2!1sen!2sie',
     WbSite: 'https://www.therailwayinnportslade.co.uk/'
 
+  },
+  {
+    Title: 'Tortilla',
+    Address: 'WEST STREET',
+    Description: 'Join us at Tortilla Brighton for freshly made, award winning California-style Mexican burritos, tacos and more.',
+    ItemImage: tortillaImg,
+    GMaps:'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.434610395947!2d-0.14661322300892474!3d50.82311326046096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4875850c998bfae5%3A0xbd0fafd499332e91!2sTortilla%20Brighton!5e0!3m2!1spt-BR!2sie!4v1682890380790!5m2!1spt-BR!2sie',
+    WbSite: 'https://www.tortilla.co.uk/restaurants/brighton?utm_source=google&utm_medium=google&utm_campaign=GMB',
   }
 ];
 
 
 function HomePg() {
 
-  /*const [slideMove, setSlideMove] = useState(false);
 
-  function switchSlide(){
-    const windowSize = window.innerWidth;
-    setSlideMove(current => !current);
-    if (windowSize > 450){
-      if (slideMove){
-        return document.querySelector('span').style.marginLeft = '0vw';
-      }
-      else{
-        return document.querySelector('span').style.marginLeft = '-80vw';
-      }
-    }
-  }*/
 
   const [current, setCurrent] = useState(0);
   
@@ -71,7 +84,7 @@ function HomePg() {
         </div>
       </div>
       <div className={homecl.statement}>Find your next experience in one best rated restaurants listed below:</div>
-      <div className={homecl.listLayout}>  {/*Mix of menuLayout and MenuAreas properties*/}
+      <div className={homecl.listLayout}> 
         <ItemOrganizer List = {LIST_DATA}  />
       </div>
     </div>

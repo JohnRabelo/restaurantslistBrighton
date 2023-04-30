@@ -1,3 +1,20 @@
-.contactContainer{
-    height: calc(100vh - 180px);
+.formContainer{
+    width: 80vw;
+    max-width: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 40px;
+    min-height: calc(100vh - 220px);
+
+
 }
+
+.formsAlternative{
+    font-weight: bold;
+    font-size: 24px;
+    margin: 20px 0px;
+    color: #3f3436;
+}
+

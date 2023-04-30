@@ -3,6 +3,7 @@ import HomePg from "./pages/Home";
 import ContactPg from "./pages/Contact";
 import NavBar from "./pages/Nav";
 import FooterComponent from "./pages/Footer";
+import MsgPg from "./pages/MsgReceived";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
           <Route path='/' element={<FooterComponent />} >
             <Route index element={<HomePg/>} />
             <Route path='contact' element={<ContactPg/>}/>
+            <Route path='newmsg' element={<MsgPg/>}/>
           </Route>
         </Route>
       </Routes>
