@@ -30,7 +30,7 @@ const LIST_DATA = [
   },  {
     Title: 'LA CHOZA',
     Address: 'GLOUCESTER ROAD',
-    Description: 'Whether enjoying a romantic meal for two or partying with a large group of friends, we’ll make sure you have a fantastic time! Dos Sombreros is also a perfect place for a drink or party!',
+    Description: 'La Choza was born in 2012, a small but perfectly formed vibrant pink Mexican street food eatery on a tucked-away corner of Gloucester Road in Brighton’s North Laine. The lively creation of lifelong foodies and friends Aoife Sweeney and Annie Gelpey who shared a passion for all things Mexican from Frieda Kahlo to tequila. On a mission to bring the authentic taste of Mexico to their seaside hometown, they made frequent inspiring tasting tours to Mexico where the duo roamed markets, ate at street stalls, and shared meals with locals. They brought the best recipes home with them and created a menu of outstanding and, most importantly, authentic Mexican delights.',
     ItemImage: imgLaChoza,
     GMaps:'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2520.2265752464336!2d-0.14429080659701163!3d50.826966987134064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487585750eb61871%3A0xf900d0010499b69c!2sLa%20Choza!5e0!3m2!1spt-BR!2sie!4v1682890063347!5m2!1spt-BR!2sie',
     WbSite: 'https://lachoza.co.uk/',
