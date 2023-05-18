@@ -1,6 +1,6 @@
 Title: FrontEnd application which lists Mexican restaurant options in Brighton/UK.
 Objective: Test Firebase API's capabilities related to storing data after form submission and handling POST HTTP requests;
-Learning outcomes: Focus on HTTP requests and React Context;
+Learning outcomes: Focus on HTTP requests;
 Functionalities: Lists, sliders, add/remove items;
 Run code: npm install dependencies and npm start
 
