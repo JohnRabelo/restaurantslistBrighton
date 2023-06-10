@@ -83,7 +83,7 @@ function HomePg() {
           </span>
         </div>
       </div>
-      <div className={homecl.statement}>Find your next experience in one best rated restaurants listed below:</div>
+      <div className={homecl.statement}>Find your next  experience in one best rated restaurants listed below:</div>
       <div className={homecl.listLayout}> 
         <ItemOrganizer List = {LIST_DATA}  />
       </div>
